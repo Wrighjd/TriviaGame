@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Iron Man Trivia!</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Homework 5 for UT Coding Boot Camp">
+        <meta name="author" content="Isaac J. Lee">
 
-    <link rel="stylesheet" type= "image/png" href="assets/images/...">
-    <link rel="stylesheet" type= "text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type= "text/javascript" src="assets/javascript/app.js">
-    <script type="text/javascript" src="assets/javascript/questions.js"></script>
+        <title>Trivia Game</title>
+        
+        <link rel="icon" type="image/png" href="assets/images/images.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Quicksand">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Trivia Game</h1>
+            
+            
+            <div class="page">
+                <h2>Directions:</h2>
+                
+                <p>10 trivia questions.</p>
+                <p>How many will you get right?</p>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-</head>
+                <div class="page_next" id="button_start">Start</div>
+            </div>
+            
+            
+            <div class="page" id="quizForm">
+                <div id="question"></div>
+                <div class="container_fixed">
+                    <div id="timer"></div>
+                </div>
+                <div id="button_submit">Submit</div>
+            </div>
+            
+           
+            <div class="page">
+                <h2>Results:</h2>
+                <p>You got <span id="numCorrectAnswers"></span> out of <span id="numQuestions"></span> questions correct!</p>
 
-<body>
-<div class= "container">
-        <h1>Iron Man Questionaire!</h1>
-
-        <div class="page">
-            <h2>Directions:</h2>
-
-            <p>10 Trivia questions.</p>
-            <p>How well do you know Iron Man? Press 'Start' to begin!</p>
-
-            <div class="page_next" id="button_start">Start</div>
+                <div class="page_next" id="button_restart">Restart</div>
+            </div>
         </div>
-       <div class="page"  id="quizForm">
-           <div id="question"></div>
-           <div class="container_fixed">
-               <div id="timer"></div>
-           </div>
-           <div id="button_submit">Submit!</div>
-       </div>
-       <div class="page">
-           <h2>Results:</h2>
-           <p>You correctly identified <span id="numCorrectAnswers"></span> out of <span id="numQuestions"></span>facts!</p>
 
-           <div class="page_next" id="button_restart">Restart</div>
-       </div>
-</div>
-
-    
-</body>
+        <script type="text/javascript" src="assets/javascript/questions.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </body>
 </html>
